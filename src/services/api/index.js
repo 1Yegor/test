@@ -8,7 +8,7 @@ export const getIds = async () => {
     action: "get_ids",
     params: { offset: 0 },
   };
-  const url = "http://api.valantis.store:40000/";
+  const url = "https://api.valantis.store:41000/";
   try {
     const response = await fetch(url, {
       method: "POST",
@@ -36,7 +36,7 @@ export const getItems = async (idArray, retries = 3) => {
     action: "get_items",
     params: { ids: idArray },
   };
-  const url = "http://api.valantis.store:40000/";
+  const url = "https://api.valantis.store:41000/";
 
   try {
     const response = await fetch(url, {
@@ -73,7 +73,7 @@ export const filterItems = async (params) => {
     action: "filter",
     params: params,
   };
-  const url = `http://api.valantis.store:40000/`;
+  const url = `https://api.valantis.store:41000/`;
   try {
     const response = await fetch(url, {
       method: "POST",
@@ -103,7 +103,7 @@ export const getFields = async () => {
     action: "get_fields",
     params: { field: "price", offset: 0, limit: 10 },
   };
-  const url = "http://api.valantis.store:40000/";
+  const url = "https://api.valantis.store:41000/";
   try {
     const response = await fetch(url, {
       method: "POST",
