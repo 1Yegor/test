@@ -40,7 +40,7 @@ const ProductTable = ({
           )}
           <Loader />
         </>
-      ) : !products.length && Boolean(!idArray?.length) ? (
+      ) : !products.length && Boolean(!idArray?.length) && isLoaderShow ? (
         <h2>По вашему запросу ничего не найдено.Попробуйти изменить запрос</h2>
       ) : (
         products.map((product) => (
