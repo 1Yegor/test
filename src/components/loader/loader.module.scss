@@ -1,0 +1,43 @@
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.wrapper {
+  margin: 50vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.image {
+  z-index: 1000;
+  position: relative;
+  width: 28px;
+}
+
+.loaderCircle,
+.image {
+  z-index: 1000;
+  animation: spin 1s infinite linear;
+  position: absolute;
+  width: 52px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    margin: 111px 0;
+  }
+}

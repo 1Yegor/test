@@ -1,0 +1,27 @@
+.App {
+
+}
+.container {
+  padding: 40px 80px;
+  max-width: 1440px;
+  min-width: 600px;
+  margin: 0 auto;
+}
+
+.loader {
+padding-top: 50vh;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+

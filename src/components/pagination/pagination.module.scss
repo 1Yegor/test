@@ -1,0 +1,114 @@
+.pagination {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pagination__page, .pagination__page_active {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #b4afa8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+  background: #fff;
+}
+
+.pagination__page:hover {
+  background: #ede8e1;
+}
+
+span.pagination__page {
+  color: #877f72;
+  border-color: #ede8e1;
+  cursor: default;
+  border: 1px solid #b4afa8;
+}
+
+span.pagination__page:hover {
+  background: #fff;
+}
+
+.pagination__page_active {
+  color: #877f72;
+  background: #ede8e1;
+  border-color: #ede8e1;
+  cursor: default;
+}
+
+.pagination__prev {
+  margin: 6px;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #b4afa8;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-image: url(img/prev.svg);
+  transition: all 0.2s ease-out;
+}
+
+.pagination__next {
+  margin: 6px;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #b4afa8;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-image: url(img/next.svg);
+  transition: all 0.2s ease-out;
+}
+
+.pagination__prev:hover,
+.pagination__next:hover {
+  background-color: #ede8e1;
+}
+
+span.pagination__prev,
+span.pagination__next {
+  opacity: 0.4;
+  background-color: transparent;
+}
+
+span.pagination__prev:hover,
+span.pagination__next:hover {
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+
+
+  .pagination__page, .pagination__page_active  {
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+  }
+
+  .pagination__prev {
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+  }
+
+  .pagination__next {
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+  }
+}
